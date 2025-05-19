@@ -1,0 +1,19 @@
+CONFIGURATION
+- Java version: 24.0.1
+- JavaFX version: 24.0.1
+- OS: macOS Sequoia 15.4.1
+- Architecture: Chip Apple M2 Pro
+
+
+Copy and paste in `setup.sh` script
+```
+JAVA_SDK="https://download.java.net/java/GA/jdk24.0.1/24a58e0e276943138bf3e963e6291ac2/9/GPL/openjdk-24.0.1_macos-aarch64_bin.tar.gz"
+JAVA_FOLDER="openjdk-24.0.1_macos-aarch64_bin.tar.gz"
+FX_SDK="https://download2.gluonhq.com/openjfx/24.0.1/openjfx-24.0.1_osx-aarch64_bin-sdk.zip"
+FX_FOLDER="openjfx-24.0.1_osx-aarch64_bin-sdk.zip"
+```
+
+
+Copy and paste in terminal
+- export JAVA_HOME="./jdk-24.0.1.jdk/Contents/Home"
+- export PATH_TO_FX="./javafx-sdk-24.0.1/lib"
