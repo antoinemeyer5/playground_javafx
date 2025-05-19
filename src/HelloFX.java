@@ -20,6 +20,10 @@ public class HelloFX extends Application
 
     public static void main(String[] args)
     {
+        Dog jeff = new Dog("Jeff", 5);
+        System.out.println(jeff.toString());
+        System.out.println(jeff.name() + " is " + jeff.age() + " year(s) old.");
+
         launch();
     }
 
