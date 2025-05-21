@@ -6,11 +6,10 @@ import javafx.fxml.FXMLLoader;
 
 import javafx.scene.Scene;
 import javafx.scene.Parent;
-import javafx.scene.layout.VBox;
 
 import javafx.stage.Stage;
 
-import model.Dog;
+import model.Boat;
 
 public class Main extends Application
 {
@@ -19,9 +18,10 @@ public class Main extends Application
 
     public static void main(String[] args)
     {
-        Dog jeff = new Dog("Jeff", 5);
-        System.out.println(jeff.toString());
-        System.out.println(jeff.name() + " is " + jeff.age() + " year(s) old.");
+        Boat santa_maria = new Boat("Santa Maria", 21.0f, 7.6f, 100, 40);
+        Boat mayflower = new Boat("Mayflower", 30.0f, 7.6f, 189, 30);
+        System.out.println(santa_maria.toString());
+        System.out.println(santa_maria.crew());
 
         launch(args);
     }
