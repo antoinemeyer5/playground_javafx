@@ -3,21 +3,27 @@
 JavaFX allows you to create Java applications with a modern,
 hardware-accelerated user interface that is highly portable.
 
-Documentation: https://openjfx.io/openjfx-docs//#introduction
+Documentation: https://openjfx.io/javadoc/24/
 
-## Setup
+## Screenshots
+
+TODO
+
+## Usage
+
+1. Setup
 
 You must initialize the variables in the `setup.sh` script.
 
 > You will find examples of configurations for different OS and architectures.
 
-Script download Java and JavaFX, extract then remove tar/zip.
+Script do local Java and JavaFX download, extract then remove tar/zip.
 
 ```zsh
 bash setup.sh
 ```
 
-## Export
+2. Export
 
 Manually export environment variables.
 
@@ -31,7 +37,7 @@ export PATH_TO_FX=
 
 > You will find examples of configurations for different OS and architectures.
 
-## Execute
+3. Execute
 
 Script compile then run the application.
 
