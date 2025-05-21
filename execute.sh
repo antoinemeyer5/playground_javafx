@@ -5,14 +5,20 @@ DIR_OUTPUT="./out"
 
 compile="javac
     --module-path $PATH_TO_FX
-    --add-modules javafx.controls
+    --add-modules javafx.controls,javafx.fxml
     -d $DIR_OUTPUT/
     $DIR_SOURCE/*/*.java"
 
+# copy fxml files in DIR_OUTPUT
+copyView="cp
+    -a $DIR_SOURCE/view
+    $DIR_OUTPUT/"
+
 run="java
     --module-path $PATH_TO_FX
-    --add-modules javafx.controls
+    --add-modules javafx.controls,javafx.fxml
     -classpath $DIR_OUTPUT/
     main.Main"
 
-$compile && $run
+# execute
+$compile && $copyView && $run

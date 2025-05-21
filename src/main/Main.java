@@ -2,10 +2,11 @@ package main;
 
 import javafx.application.Application;
 
+import javafx.fxml.FXMLLoader;
+
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.layout.BorderPane;
+import javafx.scene.Parent;
+import javafx.scene.layout.VBox;
 
 import javafx.stage.Stage;
 
@@ -26,17 +27,11 @@ public class Main extends Application
     }
 
     @Override
-    public void start(Stage stage)
+    public void start(Stage stage) throws Exception
     {
-        String javaVersion = System.getProperty("java.version");
-        String javafxVersion = System.getProperty("javafx.version");
+        Parent root = FXMLLoader.load(getClass().getResource("/view/Main.fxml"));
 
-        BorderPane layoutManager = new BorderPane();
-        layoutManager.setLeft(new Button("Left button"));
-        layoutManager.setCenter(new Label("JavaFX " + javafxVersion + ", running on Java " + javaVersion));
-        layoutManager.setRight(new Button("Right button"));
-
-        Scene scene = new Scene(layoutManager, WIDTH, HEIGHT);
+        Scene scene = new Scene(root, WIDTH, HEIGHT);
 
         stage.setScene(scene);
         stage.setTitle("Playground JavaFX");
