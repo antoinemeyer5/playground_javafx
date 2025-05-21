@@ -7,12 +7,12 @@ compile="javac
     --module-path $PATH_TO_FX
     --add-modules javafx.controls
     -d $DIR_OUTPUT/
-    $DIR_SOURCE/*.java"
+    $DIR_SOURCE/*/*.java"
 
 run="java
     --module-path $PATH_TO_FX
     --add-modules javafx.controls
     -classpath $DIR_OUTPUT/
-    HelloFX"
+    main.Main"
 
 $compile && $run
